@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    max-width: 70vw;
+    margin: 0 auto;
+    /*adicionar display flex depois das section  */
+    /* indicador 1 */
+    display: flex;
+    flex-direction: row;
+
+    padding: 100px 0;
+    /* va para o indicador 2 */
+}
+
+/* section aside */
+
+section.sidebar{
+    width: 30%;
+    /* apos isso pode ir para indicador 1 */
+    /*adicionar display flex depois de adicionar no container  */
+    /* indicador 2, FIM */
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+    gap: 10px;
+}
+
+section.sidebar button{
+    padding: 10px;
+    background-color: #242424;
+    color: white;
+    font-size: 18px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: none;
+
+}
+
+section.sidebar button:hover{
+    background-color:#bfbfbf;
+    color: #242424;
+}
+
+section.sidebar button:active{
+    background-color:#e3e3e3;
+    color: #242424;
+    /* apos isso pode remover o backgorund yellow  e adicionar comentario da section aside*/
+}
+/* section aside */
+
+/* section  card*/
+
+section.cards{
+    width: 70%;
+    padding: 0 10px;
+}
+
+section.cards .cards-container{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 500px;
+    box-shadow: 0px 1px 22px -5px #000000;
+    border-radius: 8px;
+}
+
+.card-header{
+    height: 55%;
+    padding: 0 10px;
+    position: relative;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+/* cards color */
+.goku{
+    background-color: #f85b1a;
+}
+
+.vegeta{
+    background-color: #072083;
+}
+.majinBoo{
+    background-color: #fecbd9;
+}
+
+/* cards color */
+.card-header .planeta{
+    width: 100%;
+    text-align: right;
+    font-size: 16px;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+
+.card-header .nome-classe{
+    display: flex;      
+}
+
+.nome-classe-container{
+    padding-left: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.card-header .nome-classe .nome-classe-container .nome{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.card-header .nome-classe .nome-classe-container .classe{
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.card-header img{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 50px;
+    transform: translateX(50%);
+    right: 50%;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    color: #454545;
+    height: 45%;
+    padding: 10px;
+    justify-content: flex-end;
+    font-size: 25px;
+    
+}
+
+.habilidades{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 50px;
+}
+
+.habilidades-majinboo{
+    font-size: 20px;
+    line-height: 40px;
+}
